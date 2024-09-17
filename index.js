@@ -3,19 +3,11 @@ const url_getDatosEncriptados='https://script.google.com/macros/s/AKfycbzVPDiZgp
 const maxRetries=60;
 const delay=1000;
 ////////////////////////////////////////////////////////
-//Telegram.WebApp.onEvent('ready',function(){
-//// Obtener información del usuario
-//const user=Telegram.WebApp.initDataUnsafe.user;
-//if(user) {
-//document.getElementById('login_log_0').textContent='User ID:'+user.id;
-//document.getElementById('login_log_1').textContent='Username:'+user.username;
-//document.getElementById('login_log_2').textContent='First Name:'+user.first_name;
-//document.getElementById('login_log_3').textContent='Last Name:'+user.last_name;
-//}
-//});
-
-
+const url_setDataBasePublica='https://script.google.com/macros/s/AKfycbxp2iDTA4hkv4dq2BcvkR6EaCqX2s3_NDzUiMeJgBrmMq3GjtVb-BmT0BuWifWSczPJvA/exec';
+////////////////////////////////////////////////////////
+//7LepTZz9:@=+
 document.addEventListener('DOMContentLoaded',async()=>{
+document.getElementById('login_log').textContent=await getToken000();
 const user=await Telegram.WebApp.initDataUnsafe.user;
 if(user) {
 document.getElementById('login_log_0').textContent='User ID:'+user.id;
@@ -23,7 +15,6 @@ document.getElementById('login_log_1').textContent='Username:'+user.username;
 document.getElementById('login_log_2').textContent='First Name:'+user.first_name;
 document.getElementById('login_log_3').textContent='Last Name:'+user.last_name;
 }
-document.getElementById('login_log').textContent='ok';
 const form = document.getElementById('login-form');
 const loginLog = document.getElementById('login_log');
 form.addEventListener('submit',(event)=>{
@@ -38,6 +29,14 @@ setDatosEncriptados(password);
 });
 });
 ///////////////////////////////////////////////
+
+async function getToken000(){
+const url_getToken000='https://script.google.com/macros/s/AKfycbxlexl6wUR4xAvRmKWz88pqXMFFejCq-B1qRwM86b-PzNLDZWEniziXF9PqF4G3lJbMPQ/exec';
+return await get(url_getToken000);
+}
+
+
+
 async function setDatosEncriptados(datos){
 document.getElementById('login_log').textContent = '#1 '+datos;
 const datosEncriptados=await encryptMessage(datos);
