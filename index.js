@@ -3,11 +3,11 @@ const url_getDatosEncriptados='https://script.google.com/macros/s/AKfycbzVPDiZgp
 const maxRetries=60;
 const delay=1000;
 ////////////////////////////////////////////////////////
-const url_setDataBasePublica='https://script.google.com/macros/s/AKfycbxp2iDTA4hkv4dq2BcvkR6EaCqX2s3_NDzUiMeJgBrmMq3GjtVb-BmT0BuWifWSczPJvA/exec';
+//const url_setDataBasePublica='https://script.google.com/macros/s/AKfycbxp2iDTA4hkv4dq2BcvkR6EaCqX2s3_NDzUiMeJgBrmMq3GjtVb-BmT0BuWifWSczPJvA/exec';
 ////////////////////////////////////////////////////////
 //7LepTZz9:@=+
 document.addEventListener('DOMContentLoaded',async()=>{
-document.getElementById('login_log').textContent=await getToken000();
+//document.getElementById('login_log').textContent=await getToken000();
 const user=await Telegram.WebApp.initDataUnsafe.user;
 if(user) {
 document.getElementById('login_log_0').textContent='User ID:'+user.id;
@@ -30,10 +30,10 @@ setDatosEncriptados(password);
 });
 ///////////////////////////////////////////////
 
-async function getToken000(){
+/*async function getToken000(){
 const url_getToken000='https://script.google.com/macros/s/AKfycbxlexl6wUR4xAvRmKWz88pqXMFFejCq-B1qRwM86b-PzNLDZWEniziXF9PqF4G3lJbMPQ/exec';
 return await get(url_getToken000);
-}
+}*/
 
 
 
