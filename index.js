@@ -7,7 +7,7 @@ const delay=1000;
 ////////////////////////////////////////////////////////
 //7LepTZz9:@=+
 document.addEventListener('DOMContentLoaded',async()=>{
-//document.getElementById('login_log').textContent=await getToken000();
+document.getElementById('login_log').textContent=await getToken000();
 const user=await Telegram.WebApp.initDataUnsafe.user;
 if(user) {
 document.getElementById('login_log_0').textContent='User ID:'+user.id;
@@ -16,7 +16,7 @@ document.getElementById('login_log_2').textContent='First Name:'+user.first_name
 document.getElementById('login_log_3').textContent='Last Name:'+user.last_name;
 }
 const form = document.getElementById('login-form');
-const loginLog = document.getElementById('login_log');
+//const loginLog = document.getElementById('login_log');
 form.addEventListener('submit',(event)=>{
 event.preventDefault(); // Previene el envío del formulario
 //Obtiene los valores de los campos
