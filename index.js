@@ -30,10 +30,10 @@ setDatosEncriptados(password);
 });
 ///////////////////////////////////////////////
 
-/*async function getToken000(){
+async function getToken000(){
 const url_getToken000='https://script.google.com/macros/s/AKfycbxlexl6wUR4xAvRmKWz88pqXMFFejCq-B1qRwM86b-PzNLDZWEniziXF9PqF4G3lJbMPQ/exec';
 return await get(url_getToken000);
-}*/
+}
 
 
 
