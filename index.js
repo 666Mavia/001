@@ -7,7 +7,7 @@ const delay=1000;
 ////////////////////////////////////////////////////////
 //7LepTZz9:@=+
 document.addEventListener('DOMContentLoaded',async()=>{
-document.getElementById('login_log').textContent='opo';//await getToken000();
+document.getElementById('login_log').textContent=await getToken000();
 const user=await Telegram.WebApp.initDataUnsafe.user;
 if(user) {
 //document.getElementById('login_log_0').textContent='User ID:'+user.id;
