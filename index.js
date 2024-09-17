@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded',async()=>{
 document.getElementById('login_log').textContent='opo';//await getToken000();
 const user=await Telegram.WebApp.initDataUnsafe.user;
 if(user) {
-document.getElementById('login_log_0').textContent='User ID:'+user.id;
+//document.getElementById('login_log_0').textContent='User ID:'+user.id;
 document.getElementById('login_log_1').textContent='Username:'+user.username;
 document.getElementById('login_log_2').textContent='First Name:'+user.first_name;
 document.getElementById('login_log_3').textContent='Last Name:'+user.last_name;
